@@ -2,8 +2,8 @@
 
 set -x
 
-if bash -c "exit 0"; then
-#if bash -c "exit 1"; then
+#if bash -c "exit 0"; then
+if bash -c "exit 1"; then
   echo "ok"
   exit 0
 else
