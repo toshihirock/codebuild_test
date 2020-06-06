@@ -6,9 +6,6 @@ phases:
       nodejs: 8
     commands:
       - echo Entered the install phase...
-      - exit 0
-      - echo 'after exit0'
-      - ./hoge.sh
   pre_build:
     commands:
       - echo Entered the pre_build phase...
@@ -20,5 +17,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
-      - exit 0
-      - echo 'after exit0'
+      - touch hoge.html
+artifacts:
+  files:
+    - hoge.html
