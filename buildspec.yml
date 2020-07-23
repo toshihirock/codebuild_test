@@ -18,6 +18,7 @@ phases:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
       - touch hoge.html
+      - codebuild-breakpoint
 artifacts:
   files:
     - hoge.html
